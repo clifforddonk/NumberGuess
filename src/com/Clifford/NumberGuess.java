@@ -11,14 +11,24 @@ public class NumberGuess {
         int randomNum,userGuess;
         randomNum=rand.nextInt(5);
 
-        System.out.println("Guess a u number from 0 to 4: ");
-        userGuess=scanner.nextInt();
+
+
+
+do{
+    System.out.println("Guess a  number from 0 to 4: ");
+    userGuess=scanner.nextInt();
+
+        if (userGuess>4 ||userGuess<0)
+            System.out.println("Invalid input! Enter a number from 0 to 4");
+}while(userGuess>4 ||userGuess<0);
+
+
 
         if (randomNum == userGuess)
             System.out.println("Congratulations🤩, You won!");
         else if (randomNum < userGuess)
             System.out.println("You lost😢, number too high!");
-        else
+         else
             System.out.println("You lost😢, number too low!");
 
         System.out.println("The correct number was "+randomNum);
