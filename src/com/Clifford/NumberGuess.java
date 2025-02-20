@@ -5,18 +5,15 @@ import java.util.Random;
 public class NumberGuess {
 
     public static void numberGuess() {
-
+        Scanner scanner=new Scanner(System.in);
+        Random rand=new Random();
 
         int randomNum,userGuess;
-Scanner scanner=new Scanner(System.in);
-Random rand=new Random();
-randomNum=rand.nextInt(5);
-
-
-
+        randomNum=rand.nextInt(5);
 
         System.out.println("Guess a u number from 0 to 4: ");
         userGuess=scanner.nextInt();
+        
         if (randomNum == userGuess)
             System.out.println("Congratulations🤩, You won!");
         else if (randomNum > userGuess)
@@ -24,6 +21,7 @@ randomNum=rand.nextInt(5);
         else
             System.out.println(" You lost😢, number too low!");
 
-        System.out.println("The correct number was");
+        System.out.println("The correct number was "+randomNum);
+        scanner.close();
     }
 }
