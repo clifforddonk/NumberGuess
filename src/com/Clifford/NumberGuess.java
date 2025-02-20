@@ -17,9 +17,9 @@ public class NumberGuess {
         if (randomNum == userGuess)
             System.out.println("Congratulations🤩, You won!");
         else if (randomNum > userGuess)
-            System.out.println(" You lost😢, number too high!");
+            System.out.println("You lost😢, number too high!");
         else
-            System.out.println(" You lost😢, number too low!");
+            System.out.println("You lost😢, number too low!");
 
         System.out.println("The correct number was "+randomNum);
         scanner.close();
