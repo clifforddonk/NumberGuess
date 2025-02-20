@@ -14,13 +14,13 @@ public class NumberGuess {
 
 
 
-do{
+    do{
     System.out.println("Guess a  number from 0 to 4: ");
     userGuess=scanner.nextInt();
 
-        if (userGuess>4 ||userGuess<0)
+    if (userGuess>4 ||userGuess<0)
             System.out.println("Invalid input! Enter a number from 0 to 4");
-}while(userGuess>4 ||userGuess<0);
+    }while(userGuess>4 ||userGuess<0);
 
 
 
