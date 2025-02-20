@@ -13,7 +13,7 @@ public class NumberGuess {
 
         System.out.println("Guess a u number from 0 to 4: ");
         userGuess=scanner.nextInt();
-        
+
         if (randomNum == userGuess)
             System.out.println("Congratulations🤩, You won!");
         else if (randomNum > userGuess)
