@@ -25,7 +25,7 @@ public class NumberGuess {
 
 
         if (randomNum == userGuess)
-            System.out.println("Congratulations🤩, You won!");
+           
         else if (randomNum < userGuess)
             System.out.println("You lost😢, number too high!");
          else
